@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="still_life_style.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="header.css" />
+
   </head>
   <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <header class="nav-bar">
-      <a href="#" class="logo"> Bysl</a>
+      <a href="index.html" class="logo"> Bysl</a>
       <ul>
-        <li><a href="#about"> About</a></li>
-        <li><a href="#services"> Collection</a></li>
-        <li><a href="#portfolios"> Contact </a></li>
+        <li><a href="index.html"> About</a></li>
+        <li><a href="#collection"> Collection</a></li>
+        <li><a href="#contact"> Contact </a></li>
       </ul>
     </header>
 
@@ -49,7 +51,7 @@
       <h2>Featured Work</h2>
     </div>
 
-    <div class="container mt-3 mb-3">
+    <div class="container mt-3 mb-3" id="collection">
       <div class="row justify-content-between mb-5">
         <div class="col-lg-6 col-md-12 aos-init">
           <div class="color_block" style=""></div>
@@ -544,7 +546,7 @@
     </div>
 
     <!-- ///////////////////////////////footer /////////////////////////// -->
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="navigation">
         <a href="#" class="logo"> Bysl</a>
         <ul>
@@ -719,36 +721,39 @@
         <div class="tag">
           <h2 style="margin: 0;">Share Your Thoughts</h2>
         </div>
-        <div class="input-box">
-          <div class="box w50">
-            <input type="text" name="firstname" required="" />
-            <span> First Name </span>
-          </div>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <div class="input-box">
+            <div class="box w50">
+              <input type="text" name="firstname" required="" />
+              <span> First Name </span>
+            </div>
 
-          <div class="box w50">
-            <input type="text" name="lastname" required="" />
-            <span> Last Name </span>
-          </div>
+            <div class="box w50">
+              <input type="text" name="lastname" required="" />
+              <span> Last Name </span>
+            </div>
 
-          <div class="box w50">
-            <input type="text" name="email" required="" />
-            <span> Email Address </span>
-          </div>
+            <div class="box w50">
+              <input type="text" name="email" required="" />
+              <span> Email Address </span>
+            </div>
 
-          <div class="box w50">
-            <input type="text" name="phone" required="" />
-            <span> Mobile Number </span>
-          </div>
+            <div class="box w50">
+              <input type="text" name="phone" required="" />
+              <span> Mobile Number </span>
+            </div>
 
-          <div class="box w100">
-            <textarea type="text" name="message" required=""></textarea>
-            <span>Write message here ...</span>
-          </div>
+            <div class="box w100">
+              <textarea type="text" name="message" required=""></textarea>
+              <span>Write message here ...</span>
+            </div>
 
-          <div class="box w100">
-            <input type="submit" name="Send" />
+            <div class="box w100">
+              <button id="submit">Submit</button>
+              <p id="DidUSendit?" style="color: white; padding-top: 30px;"></p>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <!-- ///////////////////////////////footer /////////////////////////// -->
@@ -756,6 +761,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      document.getElementById("submit").addEventListener("click", function () {
+        document.getElementById("DidUSendit?").innerHTML = "Sent!";
+      });
     </script>
   </body>
 </html>
