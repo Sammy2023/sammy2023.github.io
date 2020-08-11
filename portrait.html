@@ -3,15 +3,46 @@
     <title>Navigation Bar</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="portrait_style.css" />
+    <link rel="stylesheet" href="header.css" />
+
+    <style>
+      header {
+        background-color: transparent;
+      }
+
+      header ul li a {
+        color: #fff;
+      }
+
+      header ul li a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      header ul li a:after,
+      .text a:after {
+        border-bottom: 2px solid white;
+      }
+
+      header ul li a:hover:after,
+      .text a:hover:after {
+        transform: scaleX(1);
+      }
+
+      header.sticky ul li a,
+      header.sticky .logo {
+        color: #000;
+      }
+    </style>
   </head>
   <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <div class="banner">
       <header class="">
-        <a href="#" class="logo"> Bysl</a>
+        <a href="index.html" class="logo"> Bysl</a>
         <ul>
-          <li><a href="#about"> About</a></li>
-          <li><a href="#services"> Collection</a></li>
-          <li><a href="#portfolios"> Contact </a></li>
+          <li><a href="index.html"> About</a></li>
+          <li><a href="#collection"> Collection</a></li>
+          <li><a href="#contact"> Contact </a></li>
         </ul>
       </header>
       <div class="background">
@@ -31,7 +62,7 @@
       });
     </script>
     <!-- Content -->
-    <section class="items">
+    <section class="items" id = "collection">
       <div class="grid-container">
         <div class="grid-box">
           <div
@@ -60,7 +91,7 @@
             data-aos="fade-down"
             data-aos-duration="1800"
           >
-            <img src= "Portrait/lemon.jpg" />
+            <img src="Portrait/lemon.jpg" />
           </div>
           <div
             id="content-box"
@@ -183,7 +214,7 @@
 
     <!-- footer -->
 
-    <div class="footer">
+    <div class="footer" id = "contact">
       <div class="navigation">
         <a href="#" class="logo"> Bysl</a>
         <ul>

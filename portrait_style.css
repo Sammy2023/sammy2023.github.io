@@ -8,6 +8,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   justify-content: center;
   align-items: center;
@@ -210,6 +214,7 @@ body {
   padding: 12px;
   outline: none;
 }
+
 
 header {
   position: fixed;
