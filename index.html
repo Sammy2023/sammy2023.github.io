@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style3.css" />
     <link rel="stylesheet" href="style4.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="mobileView_index.css" />
+    <style>
+      header {
+        background-color: transparent;
+      }
+
+      header ul li a {
+        color: #fff;
+      }
+
+      header .logo {
+        color: #fff;
+      }
+
+      header ul li a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      header ul li a:after,
+      .text a:after {
+        border-bottom: 2px solid white;
+      }
+
+      header ul li a:hover:after,
+      .text a:hover:after {
+        transform: scaleX(1);
+      }
+
+      header.sticky ul li a,
+      header.sticky .logo {
+        color: #000;
+      }
+    </style>
   </head>
   <body>
     <section class="banner" id="sec">
@@ -349,50 +384,51 @@
         <div class="title">
           <h2>Share Your Thoughts</h2>
         </div>
-        <div class="input-box">
-          <div class="box w50">
-            <input type="text" name="firstname" required="" />
-            <span> First Name </span>
-          </div>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <div class="input-box">
+            <div class="box w50">
+              <input type="text" name="firstname" required="" />
+              <span> First Name </span>
+            </div>
 
-          <div class="box w50">
-            <input type="text" name="lastname" required="" />
-            <span> Last Name </span>
-          </div>
+            <div class="box w50">
+              <input type="text" name="lastname" required="" />
+              <span> Last Name </span>
+            </div>
 
-          <div class="box w50">
-            <input type="text" name="email" required="" />
-            <span> Email Address </span>
-          </div>
+            <div class="box w50">
+              <input type="text" name="email" required="" />
+              <span> Email Address </span>
+            </div>
 
-          <div class="box w50">
-            <input type="text" name="phone" required="" />
-            <span> Mobile Number </span>
-          </div>
+            <div class="box w50">
+              <input type="text" name="phone" required="" />
+              <span> Mobile Number </span>
+            </div>
 
-          <div class="box w100">
-            <textarea type="text" name="message" required=""></textarea>
-            <span>Write message here ...</span>
-          </div>
+            <div class="box w100">
+              <textarea type="text" name="message" required=""></textarea>
+              <span>Write message here ...</span>
+            </div>
 
-          <div class="box w100">
-            <input type="submit" name="Send" />
+            <div class="box w100">
+              <input type="submit" name="Send" />
+            </div>
           </div>
-        </div>
+        </form>
       </div>
-      
     </section>
+
+    <script></script>
     <div class="credit">
-        Icons made by
-        <a
-          href="https://www.flaticon.com/authors/pixel-perfect"
-          title="Pixel perfect"
-          >Pixel perfect</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
+      Icons made by
+      <a
+        href="https://www.flaticon.com/authors/pixel-perfect"
+        title="Pixel perfect"
+        >Pixel perfect</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
   </body>
 </html>

@@ -215,6 +215,7 @@ body {
   outline: none;
 }
 
+/* ------ navigation bar ------- */
 
 header {
   position: fixed;
@@ -228,7 +229,6 @@ header {
   transition: 0.6s;
 }
 
-/* ------ navigation bar ------- */
 header ul {
   position: relative;
   display: flex;
