@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width : 699px) {
+@media (device-width: 375px) {
 
     header{ 
         height: 200px; 
