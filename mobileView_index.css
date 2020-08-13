@@ -1,4 +1,4 @@
-@media (max-width: 1000px) and (min-width: 500px) {
+@media (max-width: 1000px) and (min-width: 700px) {
 
     /* header section  */
     header{ 
@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width : 499px) {
+@media (max-width : 699px) {
 
     header{ 
         height: 200px; 
