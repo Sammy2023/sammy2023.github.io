@@ -1,3 +1,5 @@
+/* footer */
+
 .footer {
   position: relative;
   width: 100%;
@@ -47,7 +49,7 @@
   margin-top: 100px;
 }
 
-.footer .contact-form .tag {
+.footer .contact-form .title {
   position: relative;
   display: flex;
   justify-content: center;
@@ -71,6 +73,7 @@
 .footer .contact-form .input-box .box.w50 {
   position: relative;
   width: 47%;
+  padding: 0;
 }
 
 .footer .contact-form .input-box .box.w100 {
@@ -78,17 +81,19 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 0px;
+  padding: 0;
 }
 
 .footer .contact-form .input-box .box.w50 input,
 .footer .contact-form .input-box .box textarea {
   border: none;
   border-bottom: 1px solid #c6e2e5;
-  background-color: #7aa0a4;
+  background-color: transparent;
   width: 100%;
   color: white;
   padding: 10px;
   outline: none;
+  z-index: 1;
 }
 
 .footer .contact-form .input-box .box textarea {
@@ -112,8 +117,16 @@
   transition: 0.3s;
 }
 
-.footer .contact-form .input-box .box input[type="submit"],
-.footer .contact-form .input-box .box #submit {
+
+.footer .contact-form .input-box .box input:focus ~ span,
+.footer .contact-form .input-box .box textarea:focus ~ span {
+  transform: translateY(-30px);
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  color: #fff8ad;
+}
+
+.footer .contact-form .input-box .box input[type="submit"] {
   position: relative;
   cursor: pointer;
   background: #4d848a;
@@ -123,29 +136,6 @@
   max-width: 150px;
   padding: 12px;
   outline: none;
-  transition: 0.4s;
-  font-size: initial;
-}
-
-.footer .contact-form .input-box .box input[type="submit"]:hover,
-.footer .contact-form .input-box .box button[id = "submit"]:hover {
-  color: #1f5055;
-}
-
-.footer .contact-form .input-box .box.w50 input:focus ~ span,
-.footer .contact-form .input-box .box.w50 input:valid ~ span {
-  transform: translateY(-20px);
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  color: #fff8ad;
-}
-
-.footer .contact-form .input-box .box textarea:focus ~ span,
-.footer .contact-form .input-box .box textarea:valid ~ span {
-  transform: translateY(-30px);
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  color: #fff8ad;
 }
 
 .icon-container {
@@ -186,3 +176,5 @@
   transition: 0.6s;
   fill: #475993;
 }
+
+/* ---- footer-------- */

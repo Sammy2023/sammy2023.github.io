@@ -18,7 +18,7 @@ body{
 	position: relative;
 	width: 1250px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 11fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 11fr)); 
 }
 
 .box .card {
@@ -30,6 +30,8 @@ body{
 	overflow:hidden; 
 
 }
+
+
 
 .box .card:nth-child(even) 
 {
@@ -75,11 +77,21 @@ body{
 	color: #000
 }
 
-@media(max-width: 1000px )
+@media(max-width: 1000px)
 {    
     .box{
 		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
 		margin: 200px 0px;
+		padding-left: 100px; 
+	padding-right: 100px;
+	}
+
+	.box .card a{
+		width: 50%; 
+	}
+
+	.box .card a .imgBox-card{
+		width: 100%; 
 	}
 
 	.box .card{
@@ -102,8 +114,12 @@ body{
 
 	}
 
-	.box .card .imgBox-card
-	,.box .card .content-card
+
+	.box .card .imgBox-card{
+		width: 50%; 
+	}
+	
+	.box .card .content-card
 	{
 		width: 50%; 
 	}
