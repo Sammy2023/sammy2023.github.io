@@ -33,6 +33,7 @@ header ul li a {
   font-weight: 500px;
   transition: 0.5s;
   font-size: 20px;
+  
 }
 
 header ul li a:after,
@@ -87,4 +88,6 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  display: flex; 
+  align-self: center;
 }

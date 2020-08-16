@@ -82,18 +82,20 @@
   margin-top: 10px;
   margin-bottom: 0px;
   padding: 0;
+  display: flex;
 }
 
 .footer .contact-form .input-box .box.w50 input,
 .footer .contact-form .input-box .box textarea {
   border: none;
+  position: relative;
   border-bottom: 1px solid #c6e2e5;
   background-color: transparent;
   width: 100%;
   color: white;
   padding: 10px;
   outline: none;
-  z-index: 1;
+  z-index: 9;
 }
 
 .footer .contact-form .input-box .box textarea {
@@ -112,9 +114,10 @@
   left: 0;
   padding: 5px;
   letter-spacing: 1px;
-  font-weight: 1;
+  font-weight: 900;
   color: white;
   transition: 0.3s;
+  z-index: 0;
 }
 
 
@@ -175,6 +178,11 @@
 .icon-container svg:hover path#icon-facebook {
   transition: 0.6s;
   fill: #475993;
+}
+
+textarea::placeholder
+{
+  color: white; 
 }
 
 /* ---- footer-------- */
