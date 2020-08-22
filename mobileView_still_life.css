@@ -1,5 +1,4 @@
 @media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-
   header {
     height: 200px;
     font-size: 0.8em;
@@ -11,12 +10,10 @@
 
   header ul li a {
     font-size: 2.3em;
-    display: flex; 
-    
+    display: flex;
   }
 
-  header ul li
-  {
+  header ul li {
     margin: 0px 20px;
   }
 
@@ -24,36 +21,30 @@
     height: 100px;
   }
 
-   .banner
-  {
+  .banner {
     max-height: 60vh;
   }
 
-  .content p{
-      font-size: 2.5em
+  .content p {
+    font-size: 2.5em;
   }
 
-  .content{
-      margin-left: 200px;
+  .content {
+    margin-left: 200px;
   }
 
-  .background .imgBox img{
+  .background .imgBox img {
     height: 80%;
-    padding-left: 1200px;
+    padding-left: 600px;
     margin-top: 470px;
     opacity: 74%;
   }
 
-  .background .block img{
+  .background .block img {
     opacity: 29%;
-    height: 236%;
+    height: 94%;
     position: relative;
-    top: 252px;
-    left: -361px;
+    top: 161px;
+    left: -1300px;
   }
-
-  .text {
-    margin-top: 50px;
-  }
-    
 }

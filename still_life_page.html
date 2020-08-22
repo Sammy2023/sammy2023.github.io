@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="still_life_style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="mobileView_still_life.css">
+
 </head>
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
   <header class="nav-bar">
@@ -44,30 +46,21 @@
     <h1>Featured Work</h1>
   </div>
 
-    <div class="container mt-3 mb-3" id="collection">
-      <div class="row justify-content-between mb-5">
-        <div class="col-lg-6 col-md-12 aos-init">
-          <div class="color_block" style=""></div>
-          <div
-            class="myimgBox aos-init"
-            style="padding: 30px; padding-left: 50px;"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          >
-            <img
-              style="
-                width: 100%;
-                position: relative;
-                z-index: 1;
-                box-shadow: 10px 30px 40px 0px rgba(67, 58, 122, 0.3);
-              "
-              src="Still_Life/egg.jpg"
-            />
-          </div>
+  <div class="container mt-3 mb-3" id="collection">
+    <div class="row justify-content-between mb-5">
+      <div class="col-lg-6 col-md-12 aos-init">
+        <div class="color_block" style=""></div>
+        <div class="myimgBox aos-init" style="padding: 30px; padding-left: 50px;" data-aos="fade-right" data-aos-duration="2000">
+          <img style="
+              width: 100%;
+              position: relative;
+              z-index: 1;
+              box-shadow: 10px 30px 40px 0px rgba(67, 58, 122, 0.3);
+            " src="Still_Life/egg.JPG">
         </div>
       </div>
       <div class="col-lg-6 col-md-12 d-flex justify-content-center  align-items-center" style="">
-        <div class="text aos-init aos-animate" data-aos="fade-left" data-aos-duration="1800" style="padding: 30px;text-align: center;font-stretch: expanded;">
+        <div class="text aos-init" data-aos="fade-left" data-aos-duration="1800" style="padding: 30px;text-align: center;font-stretch: expanded;">
           <h2>Egg Beater</h2>
           <div>
             <p>Graphite</p>
@@ -496,7 +489,11 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true,
+      mirror: false,
+      offset: 350
+    });
   </script>
 
   <script>

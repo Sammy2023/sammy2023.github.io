@@ -66,7 +66,7 @@
           >
             <img
               style="
-                width: 119%;
+                width: 104%;
                 position: relative;
                 z-index: 1;
                 box-shadow: 10px 30px 40px 0px rgba(67, 58, 122, 0.3);
@@ -547,7 +547,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+      once: true,
+      mirror: false,
+      offset: 500
+    });
     </script>
   </body>
 </html>

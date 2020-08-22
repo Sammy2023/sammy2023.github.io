@@ -232,47 +232,8 @@ header .logo {
   );
 }
 
-.row_1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-}
-
-.row_1 .row_1_imgBox {
-  width: 35%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0px 20px 80px 0px rgba(67, 58, 122, 0.2);
-  background: rgb(114, 129, 131);
-  background: linear-gradient(
-    310deg,
-    rgba(114, 129, 131, 1) 14%,
-    rgba(231, 228, 208, 1) 98%
-  );
-}
-
-.row_1 .row_1_imgBox img {
-  width: 100%;
-  position: relative;
-  padding: 50px;
-}
-
-.row_1 .row_1_context {
-  display: flex;
-  width: 500px;
-  height: 300px;
-  padding: 30px;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 0px 20px 80px 0px rgba(67, 58, 122, 0.2);
-  position: relative;
-  left: -10px;
-  top: 50px;
+.row{
+  margin-bottom: 230px!important; 
 }
 
 .text{

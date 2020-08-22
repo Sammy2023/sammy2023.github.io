@@ -95,17 +95,21 @@ header .logo {
 .content h2 {
   color: #fff;
   font-size: 2.5em;
+  text-shadow: 1px 1px 50px rgb(6 44 76 / 44%);
+  margin-bottom: 34px;
 }
 
 .content h2 span {
   color: #fff;
   font-size: 1.2em;
+  margin-bottom: 100px;
 }
 
 .content p {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 300;
+  text-shadow: 1px 1px 70px rgb(10 46 101);
 }
 
 .content a {
