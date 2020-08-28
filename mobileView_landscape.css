@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+@media (max-device-width: 414px) and (max-device-height: 896px) {
 
   header {
     height: 200px;
@@ -38,17 +38,17 @@
   }
 
   .background .imgBox img{
-    height: 80%;
+    height: 100%;
     padding-left: 1200px;
-    margin-top: 470px;
+    margin-top: 61px;
     opacity: 74%;
   }
 
   .background .block img{
     opacity: 29%;
-    height: 236%;
+    height: 194%;
     position: relative;
-    top: 252px;
+    top: 280px;
     left: -361px;
   }
 
