@@ -34,18 +34,18 @@
   }
 
   .background .imgBox img {
-    height: 110%;
+    height: 112%;
     position: relative;
     padding-left: 600px;
-    top: 300px;
+    top: 200px;
     opacity: 74%;
   }
 
   .background .block img {
     opacity: 29%;
-    height: 109%;
+    height: 112%;
     position: relative;
-    top: 319px;
-    left: -1300px;
+    top: 100px;
+    left: -1400px;
   }
 }
