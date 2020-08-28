@@ -34,7 +34,7 @@
   }
 
   .background .imgBox img {
-    height: 140%;
+    height: 110%;
     position: relative;
     padding-left: 600px;
     top: 400px;
@@ -43,9 +43,9 @@
 
   .background .block img {
     opacity: 29%;
-    height: 140%;
+    height: 109%;
     position: relative;
     top: 319px;
-    left: -1100px;
+    left: -1300px;
   }
 }
