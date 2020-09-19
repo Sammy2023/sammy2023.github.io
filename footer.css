@@ -180,7 +180,7 @@
   fill: #475993;
 }
 
-textarea::placeholder
+::placeholder
 {
   color: white; 
 }
