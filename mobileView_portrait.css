@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+@media (max-device-width: 414px) and (max-device-height: 896px) {
   header {
     height: 200px;
     font-size: 0.8em;
