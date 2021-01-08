@@ -1,0 +1,94 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 100px;
+  z-index: 10;
+  transition: 0.6s;
+  background-color: white;
+  min-width: 1000px; 
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+header ul li {
+  position: relative;
+  list-style-type: none;
+  margin: 0 30px;
+}
+
+header ul li a {
+  position: relative;
+  margin: 2px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500px;
+  transition: 0.5s;
+  font-size: 20px;
+  
+}
+
+header ul li a:after,
+.text a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px black;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+header ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+header ul li a:hover:after,
+.text a:hover:after {
+  transform: scaleX(1);
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+  box-shadow: 0px 20px 80px 0px rgba(67, 58, 122, 0.1);
+}
+
+header.sticky ul li a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px black;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+header.sticky ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+header.sticky ul li a,
+header.sticky .logo {
+  color: #000;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex; 
+  align-self: center;
+}
