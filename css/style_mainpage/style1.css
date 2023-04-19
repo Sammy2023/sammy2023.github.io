@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 1px red solid;
   /* keeps all padding and margin within the actual size of an element*/
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -77,7 +78,7 @@ header .logo {
   width: 100%;
   min-height: 130vh;
   padding: 100px;
-  background: url(../../images/landscape/polarbear.JPG);
+  background: url(../../images/senior_project/piece3.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
