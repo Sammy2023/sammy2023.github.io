@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px red solid;
   /* keeps all padding and margin within the actual size of an element*/
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
